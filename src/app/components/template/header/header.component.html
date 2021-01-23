@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="mat-elevation-z4">
+  <a [routerLink]="['/']" routerLinkActive="router-link-active">
+    <span> Projetos Angular </span>
+  </a>
+
+  <span style="flex: 1 1 auto"></span>
+
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button
+      mat-menu-item
+      [routerLink]="['/graficos-module/pie-chart']"
+      routerLinkActive="router-link-active"
+    >
+      Item 1
+    </button>
+    <button
+      mat-menu-item
+      [routerLink]="['/graficos-module/pie-chart']"
+      routerLinkActive="router-link-active"
+    >
+      Item 2
+    </button>
+  </mat-menu>
+</mat-toolbar>

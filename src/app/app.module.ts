@@ -7,9 +7,12 @@ import { AppComponent } from "./app.component";
 import { MaterialModule } from "./core/material.module";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HeaderComponent } from "./components/template/header/header.component";
+import { FooterComponent } from "./components/template/footer/footer.component";
+import { PagesModule } from "./pages/pages.module";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -18,6 +21,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
+
+    PagesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
